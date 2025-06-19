@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GrapesJS Minimal Test</title>
+  <link rel="stylesheet" href="packages/core/dist/css/grapes.min.css">
+  <script src="packages/core/dist/grapes.min.js"></script>
+  <style>
+    body, html { height: 100%; margin: 0; }
+  </style>
+</head>
+<body>
+
+<div id="gjs" style="height:100%;"></div>
+
+<script type="text/javascript">
+  var editor = grapesjs.init({
+    container: '#gjs',
+    height: '100%',
+    fromElement: true,
+    storageManager: false,
+    plugins: ['gjs-blocks-basic'],
+    pluginsOpts: {
+      'gjs-blocks-basic': {}
+    }
+  });
+</script>
+
+</body>
+</html>
